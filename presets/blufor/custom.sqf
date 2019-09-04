@@ -47,11 +47,11 @@ KP_liberation_fuel_crate = "CargoNet_01_barrels_F";                     // This 
     IMPORTANT: The last element inside each array must have no comma at the end!
 */
 infantry_units = [
-	["rhsgref_ins_commander",30,0,0],								//Officer
-	["rhsgref_ins_crew",30,0,0],									//Crew
-	["rhsgref_ins_militiaman_mosin",30,0,0],						//Mosin Rifleman
-	["rhsgref_ins_squadleader",30,0,0],								//Squad Leader
-	["rhsgref_ins_pilot",30,0,0],									//Pilot
+	["rhsgref_ins_commander",30,0,0],								// Officer
+	["rhsgref_ins_crew",30,0,0],									// Crew
+	["rhsgref_ins_militiaman_mosin",30,0,0],						// Mosin Rifleman
+	["rhsgref_ins_squadleader",30,0,0],								// Squad Leader
+	["rhsgref_ins_pilot",30,0,0],									// Pilot
 	["rhsgref_ins_rifleman",15,0,0],                                // Rifleman (Light)
     ["rhsgref_ins_rifleman_akm",20,0,0],                            // Rifleman
 	["rhsgref_ins_rifleman_aks74",20,0,0],                          // Rifleman
@@ -69,57 +69,52 @@ infantry_units = [
 ];
 
 light_vehicles = [
-    ["CUP_O_TT650_CHDKZ",50,0,25],                                        // Quad Bike
-    ["rhsgref_ins_uaz",50,0,25],                         		      // Towing Tractor
-    ["rhsgref_ins_uaz_ags",75,0,50],                                     // Prowler
-    ["rhsgref_ins_uaz_open",75,40,50],                                      //
-	["rhsgref_ins_uaz_dshkm",75,40,50],                                      //
-	["rhsgref_ins_uaz_spg9",75,40,50],                                      //
-	["CUP_O_UAZ_METIS_CHDKZ",75,40,50],                                      //
-	["rhsgref_ins_gaz66",75,40,50],                                      //
-	["rhsgref_ins_gaz66_ammo",75,40,50],                                      //
-	["rhsgref_ins_gaz66_flat",75,40,50],                                      //
-	["rhsgref_ins_gaz66o",75,40,50],                                      //
-	["rhsgref_ins_gaz66o_flat",75,40,50],                                      //
-	["rhsgref_ins_gaz66_r142",75,40,50],                                      //
-	["rhsgref_ins_gaz66_zu23",75,40,50],                                      //
-	["rhsgref_ins_gaz66_ap2",75,40,50],                                      //
-	["rhsgref_ins_gaz66_repair",75,40,50],                                      //
-	["CUP_O_Ural_CHDKZ",75,40,50],                                      //
-	["CUP_O_Ural_Reammo_CHDKZ",75,40,50],                                      //
-	["CUP_O_Ural_Empty_CHDKZ",75,40,50],                                      //
-	["CUP_O_Ural_Open_CHDKZ",75,40,50],                                      //
-	["CUP_O_Ural_Refuel_CHDKZ",75,40,50],                                      //
-	["CUP_O_Ural_Repair_CHDKZ",75,40,50],                                      //
-	["rhsgref_ins_ural_work",75,40,50],                                      //
-	["rhsgref_ins_ural_work_open",75,40,50],                                      //
-	["rhsgref_ins_ural_Zu23",75,40,50],                                      //
-	["rhsgref_ins_zil131",75,40,50],                                      //
-	["rhsgref_ins_zil131_open",75,40,50],                                      //
-	["rhsgref_ins_zil131_flatbed",75,40,50],                                      //
-	["rhsgref_ins_zil131_flatbed_cover",75,40,50],                                      //
-	["CUP_O_Datsun_PK_Random",75,40,50],                                      //
-	["CUP_O_Datsun_4seat",75,40,50],                                      //
-	["CUP_O_Tractor_Old_CHDKZ",75,40,50],                                      //
-	["CUP_O_UAZ_METIS_CHDKZ",75,40,50],                                      //
-    ["B_SDV_01_F",150,0,50]                                  		           // SDV
+    ["CUP_O_TT650_CHDKZ",50,0,25],									// TT650
+    ["rhsgref_ins_uaz",50,0,25],									// UAZ
+    ["rhsgref_ins_uaz_ags",75,0,50],								// UAZ(AGS30)
+	["rhsgref_ins_uaz_open",75,40,50],								// UAZ(Open)
+	["rhsgref_ins_uaz_dshkm",75,40,50],								// UAZ(Dshkm)
+	["rhsgref_ins_uaz_spg9",75,40,50],								// UAZ(SPG9)
+	["CUP_O_UAZ_METIS_CHDKZ",75,40,50],								// UAZ(Metis)
+	["rhsgref_ins_gaz66",75,40,50],									// GAZ Truck
+	["rhsgref_ins_gaz66_flat",75,40,50],							// GAZ Truck(Flatbed)
+	["rhsgref_ins_gaz66o",75,40,50],								// GAZ Truck(Open)
+	["rhsgref_ins_gaz66o_flat",75,40,50],							// GAZ Truck(Flatbed Open)
+	["rhsgref_ins_gaz66_r142",75,40,50],							// GAZ Truck()
+	["rhsgref_ins_gaz66_zu23",75,40,50],							// GAZ Truck(ZSU23)
+	["rhsgref_ins_gaz66_ap2",75,40,50],								// GAZ Truck()
+	["rhsgref_ins_gaz66_repair",75,40,50],							// GAZ Truck(Repair)
+	["rhsgref_ins_ural_work",75,40,50],								// Ural Truck(Civvie)
+	["rhsgref_ins_ural_work_open",75,40,50],						// Ural Truck(Civvie Open)
+	["CUP_O_Ural_CHDKZ",75,40,50],									// Ural Truck
+	["CUP_O_Ural_Open_CHDKZ",75,40,50],								// Ural Truck(Open)
+	["CUP_O_Ural_Empty_CHDKZ",75,40,50],							// Ural Truck(Empty)
+	["rhsgref_ins_ural_Zu23",75,40,50],								// Ural Truck(ZSU23)
+	["rhsgref_ins_zil131",75,40,50],								// Zil 131 Truck
+	["rhsgref_ins_zil131_open",75,40,50],							// Zil 131 Truck(Open)
+	["rhsgref_ins_zil131_flatbed",75,40,50],						// Zil 131 Truck(Flatbed)
+	["rhsgref_ins_zil131_flatbed_cover",75,40,50],					// Zil 131 Truck(Flatbed Covered)
+	["CUP_O_Datsun_4seat",75,40,50],								// Datsun Pickup
+	["CUP_O_Datsun_PK_Random",75,40,50],							// Datsun Pickup (PK)
+	["CUP_O_Tractor_Old_CHDKZ",75,40,50],							// Tractor
+    ["B_SDV_01_F",150,0,50]											// SDV
 ];
 
 heavy_vehicles = [
-    ["rhsgref_ins_btr60",200,40,100],                             	     // 
-	["rhsgref_ins_btr70",200,40,100],                             	     // 
-	["CUP_O_MTLB_pk_ChDKZ",200,40,100],                             	     // 
-	["rhsgref_ins_bmd1",200,40,100],                             	     // 
-	["rhsgref_ins_bmp1",200,40,100],                             	     // 
-	["rhsgref_ins_bmp1d",200,40,100],                             	     // 
-	["rhsgref_ins_bmp1k",200,40,100],                             	     // 
-	["rhsgref_BRDM2_ins",200,40,100],                             	     // 
-	["rhsgref_BRDM2UM_ins",200,40,100],                             	     // 
-	["rhsgref_BRDM2_HQ_ins",200,40,100],                             	     // 
-	["CUP_O_BMP2_AMB_CHDKZ",200,40,100],                             	     // 
-	["CUP_O_BMP_HQ_CHDKZ",200,40,100],                             	     // 
-    ["LOP_AFR_OPF_T34",200,60,100],                             		  //
-    ["LOP_AFR_OPF_T55",800,1750,400]                                    // 
+	["rhsgref_BRDM2_ins",200,40,100],								// BRDM2
+	["rhsgref_BRDM2UM_ins",200,40,100],								// BRDM2(UM)
+	["rhsgref_BRDM2_HQ_ins",200,40,100],							// BRDM2(HQ)
+	["CUP_O_MTLB_pk_ChDKZ",200,40,100],								// MTLB
+    ["rhsgref_ins_btr60",200,40,100],								// BTR-60PB
+	["rhsgref_ins_btr70",200,40,100],								// BTR-70
+	["rhsgref_ins_bmd1",200,40,100],								// BMD1
+	["rhsgref_ins_bmp1",200,40,100],								// BMP1
+	["rhsgref_ins_bmp1d",200,40,100],								// BMP1D
+	["rhsgref_ins_bmp1k",200,40,100],								// BMP1K
+	["CUP_O_BMP2_AMB_CHDKZ",200,40,100],							// BMP2(Ambulance)
+	["CUP_O_BMP_HQ_CHDKZ",200,40,100],								// BMP2(HQ)
+    ["LOP_AFR_OPF_T34",200,60,100],									// T34
+    ["LOP_AFR_OPF_T55",800,1750,400]								// T55
 ];
 
 air_vehicles = [
@@ -166,19 +161,19 @@ air_vehicles = [
 ];
 
 static_vehicles = [
-    ["rhsgref_ins_d30",25,40,0],															// 
-    ["rhsgref_ins_d30_at",25,40,0],															// 
-    ["rhsgref_ins_2b14",35,40,0],															// 
-    ["rhsgref_ins_Igla_AA_pod",35,60,0],													// 
-    ["rhsgref_ins_AGS30_TriPod",35,60,0],													// 
-    ["rhsgref_ins_DSHKM",45,60,0],                                          	    		// 
-    ["rhsgref_ins_DSHKM_Mini_TriPod",50,100,0],												// 
-    ["rhsgref_ins_NSV_TriPod",50,100,0],													// 
-    ["rhsgref_ins_SPG9",80,150,0],															// 
-    ["rhsgref_ins_SPG9M",100,200,0],														// 
-	["rhsgref_ins_ZU23",100,200,0],															//
-	["LOP_ChDKZ_Kord",100,200,0],															//
-    ["LOP_ChDKZ_Kord_High",250,500,0]														// 
+	["rhsgref_ins_DSHKM",45,60,0],                                      // Dshkm
+    ["rhsgref_ins_DSHKM_Mini_TriPod",50,100,0],							// Dshkm Mini Tripod
+    ["rhsgref_ins_NSV_TriPod",50,100,0],								// NSV
+	["LOP_ChDKZ_Kord",100,200,0],										// Kord
+    ["LOP_ChDKZ_Kord_High",250,500,0],									// Kord(High)
+	["rhsgref_ins_AGS30_TriPod",35,60,0],								// AGS30
+	["rhsgref_ins_SPG9",80,150,0],										// SPG9
+    ["rhsgref_ins_SPG9M",100,200,0],									// SPG9M
+	["rhsgref_ins_ZU23",100,200,0],										// ZSU23
+	["rhsgref_ins_Igla_AA_pod",35,60,0],								// Igla AA
+	["rhsgref_ins_2b14",35,40,0],										// Podnos Mortar
+	["rhsgref_ins_d30",25,40,0],										// D30
+    ["rhsgref_ins_d30_at",25,40,0]										// D30(AT)
 ];
 
 buildings = [
@@ -277,16 +272,12 @@ support_vehicles = [
     ["ACE_Box_82mm_Mo_Illum",50,10,0],
     ["ACE_Wheel",10,0,0],
     ["ACE_Track",10,0,0],
-    ["B_APC_Tracked_01_CRV_F",500,250,350],                             // CRV-6e Bobcat
-    ["B_Truck_01_Repair_F",325,0,75],                                   // HEMTT Repair
-    ["B_Truck_01_fuel_F",125,0,275],                                    // HEMTT Fuel
-    ["B_Truck_01_ammo_F",125,200,75],                                   // HEMTT Ammo
-    ["rhsusf_M977A4_REPAIR_BKIT_usarmy_wd",325,0,75],                   // M977A4 Repair
-    ["rhsusf_M978A4_BKIT_usarmy_wd",125,0,275],                         // M978A4 Fuel
-    ["rhsusf_M977A4_AMMO_BKIT_usarmy_wd",125,200,75],                   // M977A4 Ammo
-    ["B_Slingload_01_Repair_F",275,0,0],                                // Huron Repair
-    ["B_Slingload_01_Fuel_F",75,0,200],                                 // Huron Fuel
-    ["B_Slingload_01_Ammo_F",75,200,0]                                  // Huron Ammo
+    ["rhsgref_ins_gaz66_ammo",75,40,50],							// GAZ Truck(Ammo)
+	["CUP_O_Ural_Refuel_CHDKZ",75,40,50],							// Ural Truck(Refuel)
+	["CUP_O_Ural_Repair_CHDKZ",75,40,50],							// Ural Truck(Repair)
+    ["B_Slingload_01_Repair_F",275,0,0],							// Huron Repair
+    ["B_Slingload_01_Fuel_F",75,0,200],								// Huron Fuel
+    ["B_Slingload_01_Ammo_F",75,200,0]								// Huron Ammo
 ];
 
 /*
@@ -297,82 +288,80 @@ support_vehicles = [
 
 // Light infantry squad.
 blufor_squad_inf_light = [
-    "B_Soldier_TL_F",
-    "B_Soldier_F",
-    "B_Soldier_F",
-    "B_Soldier_LAT_F",
-    "B_Soldier_GL_F",
-    "B_soldier_AR_F",
-    "B_soldier_AR_F",
-    "B_soldier_M_F",
-    "B_medic_F",
-    "B_engineer_F"
+    "rhsgref_ins_squadleader",
+    "rhsgref_ins_militiaman_mosin",
+    "rhsgref_ins_rifleman",
+    "rhsgref_ins_rifleman_RPG26",
+    "rhsgref_ins_grenadier",
+    "rhsgref_ins_machinegunner",
+    "rhsgref_ins_medic",
+    "rhsgref_ins_engineer"
 ];
 
 // Heavy infantry squad.
 blufor_squad_inf = [
-    "B_Soldier_TL_F",
-    "B_Soldier_LAT_F",
-    "B_Soldier_LAT_F",
-    "B_Soldier_GL_F",
-    "B_soldier_AR_F",
-    "B_soldier_AR_F",
-    "B_HeavyGunner_F",
-    "B_Sharpshooter_F",
-    "B_medic_F",
-    "B_engineer_F"
+    "rhsgref_ins_squadleader",
+    "rhsgref_ins_militiaman_mosin",
+    "rhsgref_ins_rifleman_RPG26",
+    "rhsgref_ins_grenadier",
+    "rhsgref_ins_grenadier_rpg",
+    "rhsgref_ins_machinegunner",
+    "rhsgref_ins_rifleman",
+    "rhsgref_ins_sniper",
+    "rhsgref_ins_medic",
+    "rhsgref_ins_engineer"
 ];
 
 // AT specialists squad.
 blufor_squad_at = [
-    "B_Soldier_TL_F",
-    "B_Soldier_F",
-    "B_Soldier_F",
-    "B_soldier_AT_F",
-    "B_soldier_AT_F",
-    "B_soldier_AT_F",
-    "B_medic_F",
-    "B_soldier_F"
+    "rhsgref_ins_squadleader",
+    "rhsgref_ins_militiaman_mosin",
+    "rhsgref_ins_rifleman",
+    "rhsgref_ins_rifleman_RPG26",
+    "rhsgref_ins_grenadier_rpg",
+    "rhsgref_ins_grenadier_rpg",
+    "rhsgref_ins_medic",
+    "rhsgref_ins_rifleman_akm"
 ];
 
 // AA specialists squad.
 blufor_squad_aa = [
-    "B_Soldier_TL_F",
-    "B_Soldier_F",
-    "B_Soldier_F",
-    "B_soldier_AA_F",
-    "B_soldier_AA_F",
-    "B_soldier_AA_F",
-    "B_medic_F",
-    "B_soldier_F"
+    "rhsgref_ins_squadleader",
+    "rhsgref_ins_militiaman_mosin",
+    "rhsgref_ins_rifleman",
+    "rhsgref_ins_specialist_aa",
+    "rhsgref_ins_specialist_aa",
+    "rhsgref_ins_specialist_aa",
+    "rhsgref_ins_medic",
+    "rhsgref_ins_rifleman_RPG26"
 ];
 
 // Force recon squad.
 blufor_squad_recon = [
-    "B_recon_TL_F",
-    "B_recon_F",
-    "B_recon_F",
-    "B_recon_LAT_F",
-    "B_recon_M_F",
-    "B_recon_M_F",
-    "B_Recon_Sharpshooter_F",
-    "B_Recon_Sharpshooter_F",
-    "B_recon_medic_F",
-    "B_recon_exp_F"
+    "rhsgref_ins_squadleader",
+    "rhsgref_ins_rifleman_akm",
+    "rhsgref_ins_rifleman_akm",
+    "rhsgref_ins_rifleman_RPG26",
+    "rhsgref_ins_machinegunner",
+    "rhsgref_ins_machinegunner",
+    "rhsgref_ins_spotter",
+    "rhsgref_ins_sniper",
+    "rhsgref_ins_medic",
+    "rhsgref_ins_saboteur"
 ];
 
 // Paratroopers squad (The units of this squad will automatically get parachutes on build)
 blufor_squad_para = [
-    "B_soldier_PG_F",
-    "B_soldier_PG_F",
-    "B_soldier_PG_F",
-    "B_soldier_PG_F",
-    "B_soldier_PG_F",
-    "B_soldier_PG_F",
-    "B_soldier_PG_F",
-    "B_soldier_PG_F",
-    "B_soldier_PG_F",
-    "B_soldier_PG_F"
+    "rhsgref_ins_squadleader",
+    "rhsgref_ins_rifleman",
+    "rhsgref_ins_rifleman",
+    "rhsgref_ins_rifleman_RPG26",
+    "rhsgref_ins_rifleman_RPG26",
+    "rhsgref_ins_rifleman_akm",
+    "rhsgref_ins_rifleman_akm",
+    "rhsgref_ins_machinegunner",
+    "rhsgref_ins_sniper",
+    "rhsgref_ins_medic"
 ];
 
 /*
@@ -380,30 +369,27 @@ blufor_squad_para = [
     Classnames below have to be unlocked by capturing military bases.
     Which base locks a vehicle is randomized on the first start of the campaign.
 */
+        
 elite_vehicles = [
-    "rhsusf_mkvsoc",                                                    // Mk.V SOCOM
-    "rhsusf_m1a1aim_tuski_wd",                                          // M1A1SA (Tusk I)
-    "B_MBT_01_TUSK_F",                                                  // M2A4 Slammer UP
-    "rhsusf_m1a2sep1tuskiiwd_usarmy",                                   // M1A2SEPv1 (Tusk II)
-    "BWA3_Leopard2_Fleck",                                              // MBT Leopard 2A6M
-    "B_MBT_01_arty_F",                                                  // M4 Scorcher
-    "rhsusf_m109_usarmy",                                               // M109A6
-    "B_MBT_01_mlrs_F",                                                  // M5 Sandstorm MLRS
-    "B_Heli_Attack_01_dynamicLoadout_F",                                // AH-99 Blackfoot
-    "RHS_AH64D_wd",                                                     // AH-64D (Multi-Role)
-    "BWA3_Tiger_RMK_Universal",                                         // UH Tiger RMK (Universal)
-    "B_UAV_02_dynamicLoadout_F",                                        // MQ-4A Greyhawk
-    "B_T_UAV_03_dynamicLoadout_F",                                      // MQ-12 Falcon
-    "B_UAV_05_F",                                                       // UCAV Sentinel
-    "B_Plane_CAS_01_dynamicLoadout_F",                                  // A-164 Wipeout (CAS)
-    "I_Plane_Fighter_04_F",                                             // A-149 Gryphon
-    "RHS_A10",                                                          // A-10A (CAS)
-    "FIR_F15C",                                                         // F-15C Eagle
-    "FIR_F15D",                                                         // F-15D Eagle
-    "FIR_F15E",                                                         // F-15E Strike Eagle
-    "JS_JC_FA18E",                                                      // F/A-18 E Super Hornet
-    "JS_JC_FA18F",                                                      // F/A-18 F Super Hornet
-    "B_Plane_Fighter_01_F",                                             // F/A-181 Black Wasp II
-    "B_Plane_Fighter_01_Stealth_F",                                     // F/A-181 Black Wasp II (Stealth)
-    "B_T_VTOL_01_armed_F"                                               // V-44 X Blackfish (Armed)
+    "CUP_O_UAZ_METIS_CHDKZ",                                                    //
+	"CUP_O_MTLB_pk_ChDKZ",                                                     //
+    "rhsgref_ins_btr60",                                         //
+    "rhsgref_ins_btr70",                                        //
+    "rhsgref_ins_bmd1",                                          //
+    "rhsgref_ins_bmp1",                                                  //
+    "rhsgref_ins_bmp1d",                                   //
+    "rhsgref_ins_bmp1k",                                              //
+    "CUP_O_BMP_HQ_CHDKZ",                                                  //
+    "CUP_O_BMP2_AMB_CHDKZ",                                               //
+    "LOP_AFR_OPF_T34",                                                  //
+    "LOP_AFR_OPF_T55",                                //
+    "",                                                          //
+    "",                                                         //
+    "",                                                         //
+    "",                                                         //
+    "",                                                      //
+    "",                                                      //
+    "",                                             //
+    "",                                     //
+    ""                                               // 
 ];
