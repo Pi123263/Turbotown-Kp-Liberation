@@ -1,14 +1,8 @@
 /*
     Needed Mods:
-    - None
 
     Optional Mods:
-    - BWMod
-    - RHSUSAF
-    - F-15C
-    - F/A-18
-    - CUP Weapons
-    - CUP Vehicles
+
 */
 
 /*
@@ -17,21 +11,21 @@
     The same classnames for different purposes may cause various unpredictable issues with player actions.
     Or not, just don't try!
 */
-FOB_typename = "Land_Cargo_HQ_V1_F";                                    // This is the main FOB HQ building.
-FOB_box_typename = "B_Slingload_01_Cargo_F";                            // This is the FOB as a container.
-FOB_truck_typename = "B_Truck_01_box_F";                                // This is the FOB as a vehicle.
-Arsenal_typename = "B_supplyCrate_F";                                   // This is the virtual arsenal as portable supply crates.
-Respawn_truck_typename = "B_Truck_01_medical_F";                        // This is the mobile respawn (and medical) truck.
-huron_typename = "B_Heli_Transport_03_unarmed_F";                       // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
+FOB_typename = "CampEast";                                    // This is the main FOB HQ building.
+FOB_box_typename = "Land_CargoBox_V1_F";                            // This is the FOB as a container.
+FOB_truck_typename = "rhsgref_ins_gaz66_r142";                                // This is the FOB as a vehicle.
+Arsenal_typename = "rhs_7ya37_1_single";                                   // This is the virtual arsenal as portable supply crates.
+Respawn_truck_typename = "rhsgref_ins_gaz66_ap2";                        // This is the mobile respawn (and medical) truck.
+huron_typename = "rhsgref_ins_gaz66_r142";                       // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
 crewman_classname = "rhsgref_ins_crew";                                         // This defines the crew for vehicles.
 pilot_classname = "rhsgref_ins_pilot";                                      // This defines the pilot for helicopters.
 KP_liberation_little_bird_classname = "B_Heli_Light_01_F";              // These are the little birds which spawn on the Freedom or at Chimera base.
-KP_liberation_boat_classname = "B_Boat_Transport_01_F";                 // These are the boats which spawn at the stern of the Freedom.
-KP_liberation_truck_classname = "B_Truck_01_transport_F";               // These are the trucks which are used in the logistic convoy system.
+KP_liberation_boat_classname = "CUP_O_PBX_RU";                 // These are the boats which spawn at the stern of the Freedom.
+KP_liberation_truck_classname = "rhsgref_ins_ural";               // These are the trucks which are used in the logistic convoy system.
 KP_liberation_small_storage_building = "ContainmentArea_02_sand_F";     // A small storage area for resources.
 KP_liberation_large_storage_building = "ContainmentArea_01_sand_F";     // A large storage area for resources.
-KP_liberation_recycle_building = "Land_RepairDepot_01_tan_F";           // The building defined to unlock FOB recycling functionality.
-KP_liberation_air_vehicle_building = "B_Radar_System_01_F";             // The building defined to unlock FOB air vehicle functionality.
+KP_liberation_recycle_building = "Land_RepairDepot_01_green_F";           // The building defined to unlock FOB recycling functionality.
+KP_liberation_air_vehicle_building = "rhs_prv13";             // The building defined to unlock FOB air vehicle functionality.
 KP_liberation_heli_slot_building = "Land_HelipadSquare_F";              // The helipad used to increase the GLOBAL rotary-wing cap.
 KP_liberation_plane_slot_building = "Land_TentHangar_V1_F";             // The hangar used to increase the GLOBAL fixed-wing cap.
 KP_liberation_supply_crate = "CargoNet_01_box_F";                       // This defines the supply crates, as in resources.
@@ -61,11 +55,11 @@ infantry_units = [
     ["rhsgref_ins_specialist_aa",50,10,0],                          // AA Specialist
     ["rhsgref_ins_medic",30,0,0],                           	    // Combat Life Saver
     ["rhsgref_ins_engineer",30,0,0],                      	        // Engineer
-    ["rhsgref_ins_saboteur",30,0,0]y		                            // Explosives Specialist
+    ["rhsgref_ins_saboteur",30,0,0],		                           // Explosives Specialist
 	["rhsgref_ins_spotter",30,0,0],                                 // Marksman
     ["rhsgref_ins_sniper",40,0,0],                                  // Sharpshooter
 	["rhsgref_ins_pilot",30,0,0],									// Pilot
-	["rhsgref_ins_crew",30,0,0]									// Crew
+	["rhsgref_ins_crew",30,0,0]										// Crew
 ];
 
 light_vehicles = [
@@ -97,6 +91,7 @@ light_vehicles = [
 	["CUP_O_Datsun_4seat",75,40,50],								// Datsun Pickup
 	["CUP_O_Datsun_PK_Random",75,40,50],							// Datsun Pickup (PK)
 	["CUP_O_Tractor_Old_CHDKZ",75,40,50],							// Tractor
+	["CUP_O_LCVP_SLA",75,40,50],									// Landing Craft
     ["B_SDV_01_F",150,0,50]											// SDV
 ];
 
@@ -118,14 +113,13 @@ heavy_vehicles = [
 ];
 
 air_vehicles = [
-    ["B_UAV_01_F",75,0,25],                                             // AR-2 Darter
-    ["B_UAV_06_F",80,0,30],                                             // AL-6 Pelican (Cargo)
-    ["B_Heli_Light_01_F",200,0,100],                                    // MH-9 Hummingbird
-    ["B_Heli_Light_01_dynamicLoadout_F",200,100,100],                   // AH-9 Pawnee
-    ["RHS_MELB_MH6M",200,0,100],                                        // MH-6M Little Bird
-    ["RHS_MELB_AH6M",200,200,100],                                      // AH-6M Pawnee
-    ["I_Heli_light_03_unarmed_F",225,0,125],                            // WY-55 Hellcat
-    ["I_Heli_light_03_dynamicLoadout_F",225,200,125],                   // WY-55 Hellcat (Armed)
+    ["CUP_O_Mi8_CHDKZ",75,0,25],                                             // AR-2 Darter
+    ["CUP_O_Mi8_medevac_CHDKZ",80,0,30],                                             // AL-6 Pelican (Cargo)
+    ["CUP_O_Mi8_VIV_CHDKZ",200,0,100],                                    // MH-9 Hummingbird
+    ["LOP_ChDKZ_Mi8MTV3_UPK23",200,100,100],                   // AH-9 Pawnee
+    ["LOP_ChDKZ_Mi8MTV3_FAB",200,0,100],                                        // MH-6M Little Bird
+    ["CUP_O_MI6T_CHDKZ",200,200,100],                                      // AH-6M Pawnee
+    ["CUP_O_MI6A_CHDKZ",225,0,125]                            // WY-55 Hellcat
 ];
 
 static_vehicles = [
@@ -213,10 +207,7 @@ support_vehicles = [
     ["ACE_Track",10,0,0],
     ["rhsgref_ins_gaz66_ammo",75,40,50],							// GAZ Truck(Ammo)
 	["CUP_O_Ural_Refuel_CHDKZ",75,40,50],							// Ural Truck(Refuel)
-	["CUP_O_Ural_Repair_CHDKZ",75,40,50],							// Ural Truck(Repair)
-    ["B_Slingload_01_Repair_F",275,0,0],							// Huron Repair
-    ["B_Slingload_01_Fuel_F",75,0,200],								// Huron Fuel
-    ["B_Slingload_01_Ammo_F",75,200,0]								// Huron Ammo
+	["CUP_O_Ural_Repair_CHDKZ",75,40,50]							// Ural Truck(Repair)
 ];
 
 /*
@@ -322,13 +313,11 @@ elite_vehicles = [
     "CUP_O_BMP2_AMB_CHDKZ",                                               //
     "LOP_AFR_OPF_T34",                                                  //
     "LOP_AFR_OPF_T55",                                //
-    "",                                                          //
-    "",                                                         //
-    "",                                                         //
-    "",                                                         //
-    "",                                                      //
-    "",                                                      //
-    "",                                             //
-    "",                                     //
-    ""                                               // 
+	"LOP_ChDKZ_Mi8MTV3_FAB",
+	"LOP_ChDKZ_Mi8MTV3_UPK23",
+	"CUP_O_MI6A_CHDKZ",
+	"CUP_O_MI6T_CHDKZ",
+	"CUP_O_Mi8_CHDKZ",
+	"CUP_O_Mi8_VIV_CHDKZ",
+	"CUP_O_Mi8_medevac_CHDKZ"
 ];

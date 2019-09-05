@@ -53,7 +53,7 @@ while {true} do {
         KP_liberation_neararsenal = [];
     };
 
-    _nearfobbox = ((getpos player) nearEntities [[FOB_box_typename, FOB_truck_typename], _distbuildfob]);
+    _nearfobbox = ((getpos player) nearEntities [[FOB_box_typename, FOB_truck_typename, "CUP_O_BMP_HQ_TKA"], _distbuildfob]);
 
     if (KP_liberation_mobilerespawn) then {
         KP_liberation_nearspawn = ((getpos player) nearEntities [[Respawn_truck_typename, huron_typename], _distspawn]);

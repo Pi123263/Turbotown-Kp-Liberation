@@ -166,16 +166,16 @@ opfor_engineer = "CUP_B_BAF_Soldier_Engineer_DPM";                              
 opfor_paratrooper = "CUP_B_BAF_Soldier_Paratrooper_DPM";                                   // Paratrooper
 
 // Enemy vehicles used by secondary objectives.
-opfor_mrap = "O_MRAP_02_F";                                             // Ifrit
-opfor_mrap_armed = "O_MRAP_02_hmg_F";                                   // Ifrit (HMG)
+opfor_mrap = "CUP_B_Ridgback_HMG_GB_W";                                             // Ifrit
+opfor_mrap_armed = "CUP_B_Mastiff_GMG_GB_W";                                   // Ifrit (HMG)
 opfor_transport_helo = "CUP_B_Merlin_HC3_VIV_GB";                   // Mi-290 Taru (Bench)
-opfor_transport_truck = "O_Truck_03_covered_F";                         // Tempest Transport (Covered)
-opfor_ammobox_transport = "O_Truck_03_transport_F";                     // Tempest Transport (Open) -> Has to be able to transport resource crates!
-opfor_fuel_truck = "O_Truck_03_fuel_F";                                 // Tempest Fuel
-opfor_ammo_truck = "O_Truck_03_ammo_F";                                 // Tempest Ammo
-opfor_fuel_container = "Land_Pod_Heli_Transport_04_fuel_F";             // Taru Fuel Pod
-opfor_ammo_container = "Land_Pod_Heli_Transport_04_ammo_F";             // Taru Ammo Pod
-opfor_flag = "Flag_CSAT_F";                                             // Flag
+opfor_transport_truck = "rhsusf_M1078A1P2_WD_fmtv_usarmy";                         // Tempest Transport (Covered)
+opfor_ammobox_transport = "rhsusf_M1078A1P2_WD_fmtv_usarmy";                     // Tempest Transport (Open) -> Has to be able to transport resource crates!
+opfor_fuel_truck = "rhsusf_M978A4_BKIT_usarmy_d";                                 // Tempest Fuel
+opfor_ammo_truck = "rhsusf_M977A4_AMMO_BKIT_usarmy_d";                                 // Tempest Ammo
+opfor_fuel_container = "B_Slingload_01_Fuel_F";             // Taru Fuel Pod
+opfor_ammo_container = "B_Slingload_01_Ammo_F";             // Taru Ammo Pod
+opfor_flag = "CUP_FlagCarrierBAF";                                             // Flag
 
 /* Adding a value to these arrays below will add them to a one out of however many in the array, random pick chance.
 Therefore, adding the same value twice or three times means they are more likely to be chosen more often. */
@@ -228,7 +228,16 @@ militia_squad = [
 
 // Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders. Can also be empty for only infantry milita.
 militia_vehicles = [
-    "O_LSV_02_armed_F"                                                  // Qilin (armed)
+    "CUP_B_FV432_Bulldog_GB_W",
+	"CUP_B_BAF_Coyote_GMG_W",
+	"CUP_B_BAF_Coyote_L2A1_W",
+	"CUP_B_Jackal2_GMG_GB_W",
+	"CUP_B_Jackal2_L2A1_GB_W",
+	"CUP_B_LR_Ambulance_GB_W",
+	"CUP_B_LR_Special_GMG_GB_W",
+	"CUP_B_LR_Special_M2_GB_W",
+	"CUP_B_LR_MG_GB_W",
+	"CUP_B_LR_Transport_GB_W"
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols at high enemy combat readiness (aggression levels).
@@ -261,7 +270,7 @@ opfor_vehicles = [
 	"CUP_B_TowingTractor_GB",
 	"CUP_B_Wolfhound_GMG_GB_W",
 	"CUP_B_Wolfhound_HMG_GB_W",
-	"CUP_B_Wolfhound_LMG_GB_W",
+	"CUP_B_Wolfhound_LMG_GB_W"
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols but at a lower enemy combat readiness (aggression levels).
@@ -362,11 +371,23 @@ opfor_battlegroup_vehicles_low_intensity = [
 /* All vehicles that spawn within battlegroups (see the above 2 arrays) and also hold 8 soldiers as passengers.
 If something in this array can't hold all 8 soldiers then buggy behaviours may occur.    */
 opfor_troup_transports = [
-    "O_Truck_03_transport_F",                                           // Tempest Transport
-    "O_Truck_03_covered_F",                                             // Tempest Transport (Covered)
-    "O_APC_Wheeled_02_rcws_F",                                          // MSE-3 Marid
-    "O_Heli_Transport_04_bench_F",                                      // Mi-290 Taru (Bench)
-    "O_Heli_Light_02_dynamicLoadout_F"                                  // Po-30 Orca (Armed)
+    "CUP_B_BAF_Coyote_GMG_W",
+	"CUP_B_BAF_Coyote_L2A1_W",
+	"CUP_B_Jackal2_GMG_GB_W",
+	"CUP_B_Jackal2_L2A1_GB_W",
+	"CUP_B_Mastiff_LMG_GB_W",
+	"CUP_B_FV432_Bulldog_GB_W_RWS",
+	"CUP_B_FV432_Bulldog_GB_W",
+	"CUP_B_AW159_RN_Blackcat",
+	"CUP_B_AW159_Unarmed_RN_Blackcat",
+	"CUP_B_AW159_GB",
+	"CUP_B_AW159_Unarmed_GB",
+	"CUP_B_MH47E_GB",
+	"CUP_B_Merlin_HC3A_Armed_GB",
+	"CUP_B_SA330_Puma_HC1_BAF",
+	"CUP_B_SA330_Puma_HC2_BAF",
+	"CUP_B_Merlin_HC3A_GB",
+	"CUP_B_C130J_GB"
 ];
 
 // Enemy rotary-wings that will need to spawn in flight.
@@ -388,6 +409,7 @@ opfor_choppers = [
 // Enemy fixed-wings that will need to spawn in the air.
 opfor_air = [
     "CUP_B_C130J_GB",                                  // 
+	"CUP_B_USMC_DYN_MQ9",
     "CUP_B_C130J_Cargo_GB",                                  //
 	"CUP_B_F35B_BAF",                                  //
 	"CUP_B_F35B_Stealth_BAF",                                  //

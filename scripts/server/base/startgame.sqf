@@ -26,7 +26,7 @@ if (count GRLIB_all_fobs == 0) then {
 		private _fobbox = objNull;
 		
 		while {count GRLIB_all_fobs == 0} do {
-			_fobbox = FOB_box_typename createVehicle (getposATL base_boxspawn);
+			_fobbox = "CUP_O_BMP_HQ_TKA" createVehicle (getposATL base_boxspawn);
 			_fobbox setdir getDir base_boxspawn;
 			_fobbox setposATL (getposATL base_boxspawn);	
 
