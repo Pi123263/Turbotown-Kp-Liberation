@@ -41,101 +41,98 @@ KP_liberation_fuel_crate = "CargoNet_01_barrels_F";                     // This 
     IMPORTANT: The last element inside each array must have no comma at the end!
 */
 infantry_units = [
-	["rhsgref_ins_commander",30,0,0],								// Officer
-	["rhsgref_ins_squadleader",30,0,0],								// Squad Leader
-    ["rhsgref_ins_rifleman_akm",20,0,0],                            // Rifleman
-	["rhsgref_ins_rifleman_aks74",20,0,0],                          // Rifleman
-	["rhsgref_ins_rifleman_aksu",20,0,0],                           // Rifleman
-	["rhsgref_ins_militiaman_mosin",30,0,0],						// Rifleman(Mosin)
-	["rhsgref_ins_rifleman",15,0,0],                                // Riflemam(Light)
-    ["rhsgref_ins_rifleman_RPG26",30,0,0],                          // Rifleman(AT)
-    ["rhsgref_ins_grenadier",25,0,0],                               // Grenadier
-    ["rhsgref_ins_machinegunner",25,0,0],                           // Autorifleman
-    ["rhsgref_ins_grenadier_rpg",50,10,0],                          // AT Specialist
-    ["rhsgref_ins_specialist_aa",50,10,0],                          // AA Specialist
-    ["rhsgref_ins_medic",30,0,0],                           	    // Combat Life Saver
-    ["rhsgref_ins_engineer",30,0,0],                      	        // Engineer
-    ["rhsgref_ins_saboteur",30,0,0],		                           // Explosives Specialist
-	["rhsgref_ins_spotter",30,0,0],                                 // Marksman
-    ["rhsgref_ins_sniper",40,0,0],                                  // Sharpshooter
-	["rhsgref_ins_pilot",30,0,0],									// Pilot
-	["rhsgref_ins_crew",30,0,0]										// Crew
+	["rhsgref_ins_commander",20,0,0],								// Officer
+	["rhsgref_ins_squadleader",15,0,0],								// Squad Leader
+    ["rhsgref_ins_rifleman_akm",4,1,0],                             // Rifleman
+	["rhsgref_ins_rifleman_aks74",4,1,0],                           // Rifleman
+	["rhsgref_ins_rifleman_aksu",3,1,0],                            // Rifleman
+	["rhsgref_ins_militiaman_mosin",2,0,0],							// Rifleman(Mosin)
+	["rhsgref_ins_rifleman",5,1,0],                                 // Riflemam(Light)
+    ["rhsgref_ins_rifleman_RPG26",10,3,0],                          // Rifleman(AT)
+    ["rhsgref_ins_grenadier",10,2,0],                               // Grenadier
+    ["rhsgref_ins_machinegunner",7,2,0],                            // Autorifleman
+    ["rhsgref_ins_grenadier_rpg",12,5,0],                          // AT Specialist
+    ["rhsgref_ins_specialist_aa",12,5,0],                          // AA Specialist
+    ["rhsgref_ins_medic",15,0,0],                           	    // Combat Life Saver
+    ["rhsgref_ins_engineer",15,0,0],                      	        // Engineer
+    ["rhsgref_ins_saboteur",15,5,0],		                        // Explosives Specialist
+	["rhsgref_ins_spotter",5,0,0],                                  // Marksman
+    ["rhsgref_ins_sniper",5,0,0],                                  // Sharpshooter
+	["rhsgref_ins_pilot",1,0,0],									// Pilot
+	["rhsgref_ins_crew",1,0,0]										// Crew
 ];
 
 light_vehicles = [
-    ["CUP_O_TT650_CHDKZ",50,0,25],									// TT650
-    ["rhsgref_ins_uaz",50,0,25],									// UAZ
-    ["rhsgref_ins_uaz_ags",75,0,50],								// UAZ(AGS30)
-	["rhsgref_ins_uaz_open",75,40,50],								// UAZ(Open)
-	["rhsgref_ins_uaz_dshkm",75,40,50],								// UAZ(Dshkm)
-	["rhsgref_ins_uaz_spg9",75,40,50],								// UAZ(SPG9)
-	["CUP_O_UAZ_METIS_CHDKZ",75,40,50],								// UAZ(Metis)
-	["rhsgref_ins_gaz66",75,40,50],									// GAZ Truck
-	["rhsgref_ins_gaz66_flat",75,40,50],							// GAZ Truck(Flatbed)
-	["rhsgref_ins_gaz66o",75,40,50],								// GAZ Truck(Open)
-	["rhsgref_ins_gaz66o_flat",75,40,50],							// GAZ Truck(Flatbed Open)
-	["rhsgref_ins_gaz66_r142",75,40,50],							// GAZ Truck()
-	["rhsgref_ins_gaz66_zu23",75,40,50],							// GAZ Truck(ZSU23)
-	["rhsgref_ins_gaz66_ap2",75,40,50],								// GAZ Truck()
-	["rhsgref_ins_gaz66_repair",75,40,50],							// GAZ Truck(Repair)
-	["rhsgref_ins_ural_work",75,40,50],								// Ural Truck(Civvie)
-	["rhsgref_ins_ural_work_open",75,40,50],						// Ural Truck(Civvie Open)
-	["CUP_O_Ural_CHDKZ",75,40,50],									// Ural Truck
-	["CUP_O_Ural_Open_CHDKZ",75,40,50],								// Ural Truck(Open)
-	["CUP_O_Ural_Empty_CHDKZ",75,40,50],							// Ural Truck(Empty)
-	["rhsgref_ins_ural_Zu23",75,40,50],								// Ural Truck(ZSU23)
-	["rhsgref_ins_zil131",75,40,50],								// Zil 131 Truck
-	["rhsgref_ins_zil131_open",75,40,50],							// Zil 131 Truck(Open)
-	["rhsgref_ins_zil131_flatbed",75,40,50],						// Zil 131 Truck(Flatbed)
-	["rhsgref_ins_zil131_flatbed_cover",75,40,50],					// Zil 131 Truck(Flatbed Covered)
-	["CUP_O_Datsun_4seat",75,40,50],								// Datsun Pickup
-	["CUP_O_Datsun_PK_Random",75,40,50],							// Datsun Pickup (PK)
-	["CUP_O_Tractor_Old_CHDKZ",75,40,50],							// Tractor
-	["CUP_O_LCVP_SLA",75,40,50],									// Landing Craft
-    ["B_SDV_01_F",150,0,50]											// SDV
+    ["CUP_O_TT650_CHDKZ",10,0,5],									// TT650
+    ["CUP_O_Datsun_4seat",35,,10],									// Datsun Pickup
+	["CUP_O_Datsun_PK_Random",45,,10],								// Datsun Pickup (PK)
+	["rhsgref_ins_uaz",55,0,15],									// UAZ
+    ["rhsgref_ins_uaz_ags",65,35,15],								// UAZ(AGS30)
+	["rhsgref_ins_uaz_open",45,0,15],								// UAZ(Open)
+	["rhsgref_ins_uaz_dshkm",65,25,15],								// UAZ(Dshkm)
+	["rhsgref_ins_uaz_spg9",85,45,15],								// UAZ(SPG9)
+	["CUP_O_UAZ_METIS_CHDKZ",115,80,15],							// UAZ(Metis)
+	["rhsgref_ins_gaz66",100,0,30],								// GAZ Truck
+	["rhsgref_ins_gaz66_flat",90,0,30],							// GAZ Truck(Flatbed)
+	["rhsgref_ins_gaz66o",100,0,30],								// GAZ Truck(Open)
+	["rhsgref_ins_gaz66o_flat",90,0,30],							// GAZ Truck(Flatbed Open)
+	["rhsgref_ins_gaz66_zu23",150,100,30],							// GAZ Truck(ZSU23)
+	["rhsgref_ins_gaz66_ap2",125,0,30],							// GAZ Truck()
+	["rhsgref_ins_ural_work",110,0,40],							// Ural Truck(Civvie)
+	["rhsgref_ins_ural_work_open",110,0,40],						// Ural Truck(Civvie Open)
+	["CUP_O_Ural_CHDKZ",110,0,40],									// Ural Truck
+	["CUP_O_Ural_Open_CHDKZ",110,0,40],							// Ural Truck(Open)
+	["CUP_O_Ural_Empty_CHDKZ",100,0,40],							// Ural Truck(Empty)
+	["rhsgref_ins_ural_Zu23",150,100,40],							// Ural Truck(ZSU23)
+	["rhsgref_ins_zil131",105,0,45],								// Zil 131 Truck
+	["rhsgref_ins_zil131_open",105,0,45],							// Zil 131 Truck(Open)
+	["rhsgref_ins_zil131_flatbed",100,0,45],							// Zil 131 Truck(Flatbed)
+	["rhsgref_ins_zil131_flatbed_cover",100,0,45],					// Zil 131 Truck(Flatbed Covered)
+	["CUP_O_Tractor_Old_CHDKZ",45,0,15],								// Tractor
+	["CUP_O_LCVP_SLA",150,65,85]									// Landing Craft
 ];
 
 heavy_vehicles = [
-	["rhsgref_BRDM2_ins",200,40,100],								// BRDM2
-	["rhsgref_BRDM2UM_ins",200,40,100],								// BRDM2(UM)
-	["rhsgref_BRDM2_HQ_ins",200,40,100],							// BRDM2(HQ)
-	["CUP_O_MTLB_pk_ChDKZ",200,40,100],								// MTLB
-    ["rhsgref_ins_btr60",200,40,100],								// BTR-60PB
-	["rhsgref_ins_btr70",200,40,100],								// BTR-70
-	["rhsgref_ins_bmd1",200,40,100],								// BMD1
-	["rhsgref_ins_bmp1",200,40,100],								// BMP1
-	["rhsgref_ins_bmp1d",200,40,100],								// BMP1D
-	["rhsgref_ins_bmp1k",200,40,100],								// BMP1K
-	["CUP_O_BMP2_AMB_CHDKZ",200,40,100],							// BMP2(Ambulance)
-	["CUP_O_BMP_HQ_CHDKZ",200,40,100],								// BMP2(HQ)
-    ["LOP_AFR_OPF_T34",200,60,100],									// T34
-    ["LOP_AFR_OPF_T55",800,1750,400]								// T55
+	["rhsgref_BRDM2_ins",190,25,75],								// BRDM2
+	["rhsgref_BRDM2UM_ins",190,5,75],								// BRDM2(UM)
+	["rhsgref_BRDM2_HQ_ins",175,0,65],							// BRDM2(HQ)
+	["CUP_O_MTLB_pk_ChDKZ",200,15,100],								// MTLB
+    ["rhsgref_ins_btr60",275,25,125],								// BTR-60PB
+	["rhsgref_ins_btr70",325,35,125],								// BTR-70
+	["rhsgref_ins_bmd1",325,55,140],								// BMD1
+	["rhsgref_ins_bmp1",325,60,150],								// BMP1
+	["rhsgref_ins_bmp1d",325,75,150],								// BMP1D
+	["rhsgref_ins_bmp1k",325,80,150],								// BMP1K
+	["CUP_O_BMP2_AMB_CHDKZ",375,125,100],							// BMP2(Ambulance)
+	["CUP_O_BMP_HQ_CHDKZ",375,5,100],								// BMP2(HQ)
+    ["LOP_AFR_OPF_T34",675,450,200],									// T34
+    ["LOP_AFR_OPF_T55",975,550,250]								// T55
 ];
 
 air_vehicles = [
-    ["CUP_O_Mi8_CHDKZ",75,0,25],                                             // AR-2 Darter
-    ["CUP_O_Mi8_medevac_CHDKZ",80,0,30],                                             // AL-6 Pelican (Cargo)
-    ["CUP_O_Mi8_VIV_CHDKZ",200,0,100],                                    // MH-9 Hummingbird
-    ["LOP_ChDKZ_Mi8MTV3_UPK23",200,100,100],                   // AH-9 Pawnee
-    ["LOP_ChDKZ_Mi8MTV3_FAB",200,0,100],                                        // MH-6M Little Bird
-    ["CUP_O_MI6T_CHDKZ",200,200,100],                                      // AH-6M Pawnee
-    ["CUP_O_MI6A_CHDKZ",225,0,125]                            // WY-55 Hellcat
+    ["CUP_O_Mi8_CHDKZ",500,30,250],                                             // AR-2 Darter
+    ["CUP_O_Mi8_medevac_CHDKZ",450,0,225],                                             // AL-6 Pelican (Cargo)
+    ["CUP_O_Mi8_VIV_CHDKZ",450,10,225],                                    // MH-9 Hummingbird
+    ["LOP_ChDKZ_Mi8MTV3_UPK23",550,350,275],                   // AH-9 Pawnee
+    ["LOP_ChDKZ_Mi8MTV3_FAB",550,350,275],                                        // MH-6M Little Bird
+    ["CUP_O_MI6T_CHDKZ",1500,0,550],                                      // AH-6M Pawnee
+    ["CUP_O_MI6A_CHDKZ",1400,0,550]                            // WY-55 Hellcat
 ];
 
 static_vehicles = [
-	["rhsgref_ins_DSHKM",45,60,0],                                      // Dshkm
-    ["rhsgref_ins_DSHKM_Mini_TriPod",50,100,0],							// Dshkm Mini Tripod
-    ["rhsgref_ins_NSV_TriPod",50,100,0],								// NSV
-	["LOP_ChDKZ_Kord",100,200,0],										// Kord
-    ["LOP_ChDKZ_Kord_High",250,500,0],									// Kord(High)
-	["rhsgref_ins_AGS30_TriPod",35,60,0],								// AGS30
-	["rhsgref_ins_SPG9",80,150,0],										// SPG9
-    ["rhsgref_ins_SPG9M",100,200,0],									// SPG9M
-	["rhsgref_ins_ZU23",100,200,0],										// ZSU23
-	["rhsgref_ins_Igla_AA_pod",35,60,0],								// Igla AA
-	["rhsgref_ins_2b14",35,40,0],										// Podnos Mortar
-	["rhsgref_ins_d30",25,40,0],										// D30
-    ["rhsgref_ins_d30_at",25,40,0]										// D30(AT)
+	["rhsgref_ins_DSHKM",45,25,0],                                      // Dshkm
+    ["rhsgref_ins_DSHKM_Mini_TriPod",35,25,0],							// Dshkm Mini Tripod
+    ["rhsgref_ins_NSV_TriPod",45,30,0],								// NSV
+	["LOP_ChDKZ_Kord",55,35,0],										// Kord
+    ["LOP_ChDKZ_Kord_High",65,35,0],									// Kord(High)
+	["rhsgref_ins_AGS30_TriPod",85,55,0],								// AGS30
+	["rhsgref_ins_SPG9",90,85,0],										// SPG9
+    ["rhsgref_ins_SPG9M",95,90,0],									// SPG9M
+	["rhsgref_ins_ZU23",125,100,0],										// ZSU23
+	["rhsgref_ins_Igla_AA_pod",150,175,0],								// Igla AA
+	["rhsgref_ins_2b14",125,150,0],										// Podnos Mortar
+	["rhsgref_ins_d30",250,300,0],										// D30
+    ["rhsgref_ins_d30_at",250,300,0]										// D30(AT)
 ];
 
 buildings = [
@@ -189,8 +186,8 @@ buildings = [
 ];
 
 support_vehicles = [
-    [Arsenal_typename,100,200,0],
-    [Respawn_truck_typename,200,0,100],
+    [Arsenal_typename,100,150,0],
+    [Respawn_truck_typename,200,0,75],
     [FOB_box_typename,300,500,0],
     [FOB_truck_typename,300,500,75],
     [KP_liberation_small_storage_building,0,0,0],
@@ -199,15 +196,16 @@ support_vehicles = [
     [KP_liberation_air_vehicle_building,1000,0,0],
     [KP_liberation_heli_slot_building,250,0,0],
     [KP_liberation_plane_slot_building,500,0,0],
-    ["ACE_medicalSupplyCrate_advanced",50,0,0],
+    ["ACE_medicalSupplyCrate_advanced",25,0,0],
     ["ACE_Box_82mm_Mo_HE",50,40,0],
     ["ACE_Box_82mm_Mo_Smoke",50,10,0],
     ["ACE_Box_82mm_Mo_Illum",50,10,0],
-    ["ACE_Wheel",10,0,0],
-    ["ACE_Track",10,0,0],
+    ["ACE_Wheel",5,0,0],
+    ["ACE_Track",5,0,0],
     ["rhsgref_ins_gaz66_ammo",75,40,50],							// GAZ Truck(Ammo)
-	["CUP_O_Ural_Refuel_CHDKZ",75,40,50],							// Ural Truck(Refuel)
-	["CUP_O_Ural_Repair_CHDKZ",75,40,50]							// Ural Truck(Repair)
+	["rhsgref_ins_gaz66_repair",125,0,30],							// GAZ Truck(Repair)
+	["CUP_O_Ural_Repair_CHDKZ",75,40,50],							// Ural Truck(Repair)
+	["CUP_O_Ural_Refuel_CHDKZ",75,40,50]							// Ural Truck(Refuel)
 ];
 
 /*
